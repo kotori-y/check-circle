@@ -3,7 +3,7 @@
  * @Author: Kotori Y
  * @Date: 2021-06-18 20:09:30
  * @LastEditors: Kotori Y
- * @LastEditTime: 2021-06-19 09:05:29
+ * @LastEditTime: 2021-06-19 10:08:16
  * @FilePath: \check-circle\static\scripts\renderCircle.js
  * @AuthorMail: kotori@cbdd.me
  */
@@ -26,7 +26,7 @@ const genCircleData = (data) => {
     nodes: ["#c5708b", "#83a78d", "#619ac3", "#ddc871", "#8076a3"],
   };
 
-  let graph = { nodes: [], links: [] };
+  const graph = { nodes: [], links: [] };
 
   for (const interaction of data) {
     const drugA = interaction.drugA,
@@ -138,9 +138,8 @@ const renderCircle = (data) => {
     ],
   };
 
-  myChart.setOption(option);
-
-  myChart.on("click", function (params) {
+  
+  myChart.on("click", (params) => {
     const elem = $(params.data.querySelector)
     if (elem.length > 0) {
       elem.removeClass("focus")
