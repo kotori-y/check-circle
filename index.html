@@ -1,0 +1,65 @@
+<!--
+ * @Description: 
+ * @Author: Kotori Y
+ * @Date: 2021-06-18 20:07:36
+ * @LastEditors: Kotori Y
+ * @LastEditTime: 2021-06-19 08:44:11
+ * @FilePath: \check-circle\index.html
+ * @AuthorMail: kotori@cbdd.me
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Circle Plot</title>
+    <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/0ac23ca/css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <script src="/static/scripts/echarts.min.js"></script>
+    <script src="/static/scripts/jQuery.js"></script>
+    <script src="/static/scripts/renderCircle.js"></script>
+    <script>
+        function plotCircle() {
+          $.getJSON("/static/data/simData.json", function (data) {
+            renderCircle(data);
+          });
+        }
+    </script>
+</head>
+<body>
+    <div class="container" style="position: relative; width: 580px; height: 580px;">
+      <div id="circlePlot" style="width: 100%; height: 100%;"></div>
+    </div>
+    <div class="interactions" style="position: relative">
+      <div class="interaction" id = "inter1">
+        <h3>Inter1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cumque a dignissimos aut, deserunt quam hic harum suscipit voluptate, ullam accusamus, reiciendis dicta maxime! Eius aliquam quas ratione qui veniam?</p>
+      </div>
+      <div class="interaction" id = "inter2">
+        <h3>Inter2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cumque a dignissimos aut, deserunt quam hic harum suscipit voluptate, ullam accusamus, reiciendis dicta maxime! Eius aliquam quas ratione qui veniam?</p>
+      </div>
+      <div class="interaction" id = "inter3">
+        <h3>Inter3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cumque a dignissimos aut, deserunt quam hic harum suscipit voluptate, ullam accusamus, reiciendis dicta maxime! Eius aliquam quas ratione qui veniam?</p>
+      </div>
+      <div class="interaction" id = "inter4">
+        <h3>Inter4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cumque a dignissimos aut, deserunt quam hic harum suscipit voluptate, ullam accusamus, reiciendis dicta maxime! Eius aliquam quas ratione qui veniam?</p>
+      </div>
+      <div class="interaction" id = "inter5">
+        <h3>Inter5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cumque a dignissimos aut, deserunt quam hic harum suscipit voluptate, ullam accusamus, reiciendis dicta maxime! Eius aliquam quas ratione qui veniam?</p>
+      </div>
+      <div class="interaction" id = "inter6">
+        <h3>Inter6</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cumque a dignissimos aut, deserunt quam hic harum suscipit voluptate, ullam accusamus, reiciendis dicta maxime! Eius aliquam quas ratione qui veniam?</p>
+      </div>
+      <div class="interaction" id = "inter7">
+        <h3>Inter7</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus cumque a dignissimos aut, deserunt quam hic harum suscipit voluptate, ullam accusamus, reiciendis dicta maxime! Eius aliquam quas ratione qui veniam?</p>
+      </div>
+    </div>
+    <script>plotCircle()</script>
+</body>
+</html>
