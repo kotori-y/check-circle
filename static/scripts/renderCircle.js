@@ -3,18 +3,18 @@
  * @Author: Kotori Y
  * @Date: 2021-06-18 20:09:30
  * @LastEditors: Kotori Y
- * @LastEditTime: 2021-06-19 10:08:16
+ * @LastEditTime: 2021-06-25 16:52:34
  * @FilePath: \check-circle\static\scripts\renderCircle.js
  * @AuthorMail: kotori@cbdd.me
  */
 
 const genCircleData = (data) => {
-  const addNodes = (graph, node) => {
-    if (graph.nodes.indexOf(node) === -1) {
-      graph.nodes.push(node);
-    }
-    return;
-  };
+//   const addNodes = (graph, node) => {
+//     if (graph.nodes.indexOf(node) === -1) {
+//       graph.nodes.push(node);
+//     }
+//     return;
+//   };
 
   const colorConfig = {
     level: new Map([
@@ -26,16 +26,16 @@ const genCircleData = (data) => {
     nodes: ["#c5708b", "#83a78d", "#619ac3", "#ddc871", "#8076a3"],
   };
 
-  const graph = { nodes: [], links: [] };
+  const graph = { nodes: data.nodes, links: [] };
 
-  for (const interaction of data) {
+  for (const interaction of data.links) {
     const drugA = interaction.drugA,
       drugB = interaction.drugB,
       level = interaction.level,
       querySelector = interaction.querySelector;
 
-    addNodes(graph, drugA);
-    addNodes(graph, drugB);
+    // addNodes(graph, drugA);
+    // addNodes(graph, drugB);
     graph.links.push({
       source: drugA,
       target: drugB,

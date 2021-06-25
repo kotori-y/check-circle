@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    "Brimonidine (ophthalmic)",
+    "Haloperidol",
+    "Conivaptan",
+    "Lonafarnib",
+    "Salmeterol"
+  ],
+
+  "links": [
+    {
+      "drugA": "Brimonidine (ophthalmic)",
+      "drugB": "Haloperidol",
+      "level": "Moderate",
+      "querySelector": "#inter1"
+    }
+  ]
+}

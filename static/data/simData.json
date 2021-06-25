@@ -1,44 +1,54 @@
-[
-  {
-    "drugA": "Brimonidine (ophthalmic)",
-    "drugB": "Haloperidol",
-    "level": "Moderate",
-    "querySelector": "#inter1"
-  },
-  {
-    "drugA": "Haloperidol",
-    "drugB": "Conivaptan",
-    "level": "Moderate",
-    "querySelector": "#inter2"
-  },
-  {
-    "drugA": "Conivaptan",
-    "drugB": "Lonafarnib",
-    "level": "Major",
-    "querySelector": "#inter3"
-  },
-  {
-    "drugA": "Conivaptan",
-    "drugB": "Salmeterol",
-    "level": "Major",
-    "querySelector": "#inter4"
-  },
-  {
-    "drugA": "Haloperidol",
-    "drugB": "Salmeterol",
-    "level": "Moderate",
-    "querySelector": "#inter5"
-  },
-  {
-    "drugA": "Salmeterol",
-    "drugB": "Lonafarnib",
-    "level": "Major",
-    "querySelector": "#inter6"
-  },
-  {
-    "drugA": "Haloperidol",
-    "drugB": "Lonafarnib",
-    "level": "Moderate",
-    "querySelector": "#inter7"
-  }
-]
+{
+  "nodes": [
+    "Brimonidine (ophthalmic)",
+    "Haloperidol",
+    "Conivaptan",
+    "Lonafarnib",
+    "Salmeterol"
+  ],
+
+  "links": [
+    {
+      "drugA": "Brimonidine (ophthalmic)",
+      "drugB": "Haloperidol",
+      "level": "Moderate",
+      "querySelector": "#inter1"
+    },
+    {
+      "drugA": "Haloperidol",
+      "drugB": "Conivaptan",
+      "level": "Moderate",
+      "querySelector": "#inter2"
+    },
+    {
+      "drugA": "Conivaptan",
+      "drugB": "Lonafarnib",
+      "level": "Major",
+      "querySelector": "#inter3"
+    },
+    {
+      "drugA": "Conivaptan",
+      "drugB": "Salmeterol",
+      "level": "Major",
+      "querySelector": "#inter4"
+    },
+    {
+      "drugA": "Haloperidol",
+      "drugB": "Salmeterol",
+      "level": "Moderate",
+      "querySelector": "#inter5"
+    },
+    {
+      "drugA": "Salmeterol",
+      "drugB": "Lonafarnib",
+      "level": "Major",
+      "querySelector": "#inter6"
+    },
+    {
+      "drugA": "Haloperidol",
+      "drugB": "Lonafarnib",
+      "level": "Moderate",
+      "querySelector": "#inter7"
+    }
+  ]
+}
